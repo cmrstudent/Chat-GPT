@@ -1,0 +1,65 @@
+1. Formatting and Style
+
+✅ Good: Indentation is consistent, no extra spaces.
+
+⚠ Bad: Missing docstring or inline comments for clarity.
+
+2. Naming Conventions
+
+✅ Good: Function name factorial follows snake_case and is descriptive.
+
+⚠ Bad: Variable num is too short → could be number or input_number for readability.
+
+3. Refactoring
+
+✅ Good: Recursive approach is clean and easy to understand.
+
+⚠ Bad: Recursive solution risks stack overflow for large inputs.
+
+⚠ Bad: Could be refactored into an iterative loop for efficiency.
+
+4. Optimization
+
+✅ Good: Works fine for small inputs.
+
+⚠ Bad: Recursive calls make it inefficient for large numbers.
+
+⚠ Bad: No caching (memoization) or iterative method used.
+
+5. Error Handling
+
+✅ Good: Input is cast to int.
+
+⚠ Bad: No check for negative input (factorial is undefined).
+
+⚠ Bad: Crashes if user enters non-numeric input (e.g., "abc").
+
+6. Documentation
+
+⚠ Bad: No docstring in the factorial function.
+
+⚠ Bad: No usage instructions or explanation for edge cases.
+
+7. Testing
+
+✅ Good: Easy to manually test small values like 0, 1, 5.
+
+⚠ Bad: No automated tests (unittest or pytest).
+
+8. Use Linters and Formatters
+
+✅ Good: Passes formatting tools (black, flake8) for spacing and indentation.
+
+⚠ Bad: Linters will warn about missing docstrings and type hints.
+
+9. Code Reviews
+
+✅ Good: Easy to read in a review.
+
+⚠ Bad: Reviewer would request input validation, documentation, and iterative approach.
+
+10. Continuous Integration (CI)
+
+⚠ Bad: No test suite means it can’t be validated automatically in CI pipelines.
+
+⚠ Bad: Would fail CI checks if project requires docstrings, type hints, or tests.
