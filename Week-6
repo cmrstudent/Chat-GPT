@@ -1,0 +1,13 @@
+import tensorflow as tf
+
+# 1. Define the two numbers as TensorFlow constants
+num1 = tf.constant(42)
+num2 = tf.constant(8)
+
+# 2. Add the two tensors using the '+' operator
+sum_result = num1 + num2
+
+# 3. Print the result. We use .numpy() to extract the plain Python value.
+print(f"The first number: {num1.numpy()}")
+print(f"The second number: {num2.numpy()}")
+print(f"The sum is: **{sum_result.numpy()}**")
